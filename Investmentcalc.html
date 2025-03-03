@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="Investmentcalcstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home.html">
+            <div class="webname">
+                <img  id="logo" src="InvestiCare logo.png" alt="InvestiCare logo"> 
+                <p>InvestiCare</p>
+            </div>
+        </a>
+        <div class="navlinks">
+            <p><a href="InvestmentGuide.html">Investment Guide</a></p>
+            <p><a href="Investmentcalc.html">Investment Calculator</a></p>
+            <p><a href="AssetClass.html">Asset Class Overview</a></p>
+            <p><a href="savingscal.html">Saving Planner</a></p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <div class="calculator">
+            <h1>Investment Calculator</h1>
+            
+            <label>Monthly Investment (₹):</label>
+            <input type="number" id="monthly-investment" placeholder="Enter amount">
+            
+            <label>Annual Return Rate (%):</label>
+            <input type="number" id="annual-return" placeholder="Enter return rate">
+            
+            <label>Investment Time (Years):</label>
+            <input type="number" id="investment-time" placeholder="Enter years">
+            
+            <button id="calculate-btn">Calculate</button>
+            
+            <div class="results">
+                <p id="total-invested">Total Invested: ₹0</p>
+                <p id="total-return">Return Amount: ₹0</p>
+                <p id="return-amount">Future Value: ₹0</p>
+            </div>
+        </div>
+
+        <div class="instructions-container">
+            <h2>How to Use the Investment Calculator?</h2>
+            
+            <ul>
+                <li><b>Enter Monthly Investment:</b> Amount you invest every month.</li>
+                <li><b>Enter Annual Return Rate:</b> Expected return percentage per year.</li>
+                <li><b>Enter Investment Period:</b> Duration in years.</li>
+                <li><b>Click 'Calculate':</b> Computes the total value of investment.</li>
+                <li><b>View Results:</b> Displays total invested, return amount, and future value.</li>
+                <li><b>Check Graph:</b> Line chart shows investment growth over time.</li>
+            </ul>
+            
+            <div class="chart-container">
+                <canvas id="sipChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="webpagename">
+            <a href="home.html">
+            <div class="logoname">
+                <img  id="logoimg" src="InvestiCare logo.png" alt="InvestiCare logo"> 
+                <p id="websitename">InvestiCare</p>
+            </div>
+            </a>
+            <div class="descript">
+                <p class="shead">Empowering Smart Investments</p>
+                <p class="webtext">Helping people make informed investment decisions with <br>easy-to-understand resources and tools. </p>
+            </div>
+        </div>
+        <div class="navcontact">
+            <div class="navigationlink">
+                <div class="navigationpart1">
+                    <a href="home.html"><p>Home</p></a>
+                    <a href="InvestmentGuide.html"><p>Investment Guide</p></a>
+                    <a href="Investmentcalc.html"><p>Investment Calculator</p></a>
+                    <a href="AssetClass.html"><p>Asset Class Overview</p></a>
+                </div>
+                <div class="navigationpart2">
+                    <a href="savingscal.html"><p>Savings Planner</p></a>
+                    <a href="faqs.html"><p>FAQs</p></a>
+                    <a href="about.html"><p>About Us</p></a>
+                </div>
+            </div>
+            <a href="contact.html" target="_blank"><p class="contact">Contact Us</p></a>
+        </div>
+        <div class="follow">
+            <div class="followpart1">
+                <div class="followus">
+                    <p>Follow Us On</p>
+                </div>
+                <div class="icons">
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-linkedin-line"></i>
+                </div>
+            </div>
+            <div class="followpart2">
+                <p id="disclaim">⚠️ Disclaimer:</p>
+                <p id="text1">Investments are subject to market risks. Please research thoroughly and contact a professional before making any financial decisions.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="investmentcalcscript.js"></script>
+
+</body>
+</html>

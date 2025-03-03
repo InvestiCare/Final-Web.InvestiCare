@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Have questions? Get in touch with us!</p>
+
+        <form id="contact-form" action="https://formspree.io/f/myzkrjae" method="POST">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="5" required placeholder="message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="success-message" style="display: none; color: green;">Your message has been sent!</p>
+    </div>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var form = event.target;
+
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: { "Accept": "application/json" }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById("success-message").style.display = "block";
+                    form.reset();
+                } else {
+                    alert("Something went wrong. Please try again.");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 130px;
+    width: 100%;
+    height: 8%;
+    background-color: #00246B;
+    font-weight: 300;
+    color: white;
+}
+
+.webname{
+    font-size: 35px;
+    display: flex;
+}
+
+.webname p{
+    padding-top: 6px;
+}
+
+#logo{
+    width: 60px;
+    height: auto;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35px;
+    gap: 26px;
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color: white; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E1DCD0;
+}
+
+main{
+    background-color: black;
+}
+
+.heading{
+    padding: 35px 150px;
+    padding-top: 90px;
+    color: white;
+    font-size: 33px;
+}
+  
+.faqs{
+    padding: 20px 150px;
+}
+
+.faq-container {
+    max-width: 1200px;
+}
+  
+.faq-item {
+    border: 1px solid #ccc;
+    margin-bottom: 33px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.question {
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #E1DCD0;
+    font-weight: bold;
+    color: #00246B;
+}
+  
+.arrow {
+    color: black;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+  
+.answer {
+    font-size: 20px;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    background-color: #E1DCD0;
+}
+  
+.answer.open {
+    max-height: 150px; 
+    padding: 15px;
+}
+  
+.question.active .arrow {
+    transform: rotate(90deg);
+}
+
+footer{
+    height: 30%;
+    width: 100%;
+    background-color: #00246B;
+    display: flex;
+}
+
+.webpagename{
+    margin: 5px;
+    width: 30%;
+    height: 238px;
+    padding: 18px 150px;
+    border-right: 2px solid #808080;
+    padding-right: 18px;
+}
+
+.logoname{
+    display: flex;
+}
+
+#logoimg{
+    width: 60px;
+    height: 55px;
+}
+
+#websitename{
+    font-size: 35px;
+    color: white;
+    padding-top: 7px;
+    font-weight: 400;
+}
+
+.shead{
+    padding-top: 10px;
+    padding-left: 30px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.webtext{
+    color: white;
+    padding-top: 22px;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.navcontact{
+    margin: 5px;
+    width: 40%;
+    height: 238px;
+    padding: 30px 33px;
+    border-right: 2px solid #808080;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+}
+
+.navigationlink{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.navigationpart1{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.navigationpart2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 7px;
+}
+
+.follow{
+    padding: 6px 150px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.followpart1{
+    width: auto;
+    height: 47%;
+    margin: 0px 20px;
+    border-bottom: 2px solid #808080;
+}
+
+.followus
+{
+    font-size: 22px;
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 13px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+}
+
+.icons i{
+    font-size: 25px;
+    color: white;
+
+}
+
+.followpart2{
+    width: auto;
+    height: 53%;
+    margin: 0px 20px;
+    padding: 8px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#disclaim{
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+#text1{
+    font-size: 13px
+}

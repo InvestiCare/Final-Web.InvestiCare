@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.my-button{
+    cursor: pointer;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 130px;
+    width: 100%;
+    height: 8%;
+    background-color: #00246B;
+    font-weight: 300;
+    color: white;
+}
+
+.webname{
+    font-size: 35px;
+    display: flex;
+}
+
+.webname p{
+    padding-top: 6px;
+}
+
+#logo{
+    width: 60px;
+    height: auto;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35px;
+    gap: 26px;
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color: white; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E1DCD0;
+}
+
+body{
+    background-color: #E1DCD0;
+}
+.hero{
+    padding-left: 150px;
+    text-align: left;
+    color: #00246B;
+    padding-top: 115px;
+    font-size: 55px;
+    font-weight: 700;
+}
+.subheading1{
+    padding-top: 45px;
+    padding-left: 150px;
+    padding-right: 130px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+}
+span{
+    color: #00246B;
+}
+.image{
+    padding-right: 0px;
+}
+#homeimage{
+    width: 240px;
+    height: 330px;
+    padding-top: 30px;
+    /* border-radius: 20px; */
+}
+
+.heropart{
+    padding-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.my-button{
+    background-color: #00246B;
+    color: #E1DCD0;
+    text-align: center;
+    display:inline-block;
+    font-size: 30px;
+    margin-left: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.my-button:hover{
+    color: white;
+}
+
+.box1{
+    padding-top: 30px;
+}
+.content1{
+    background-color: black;
+    color: white;
+    padding-left: 155px;
+    font-size: 35px;
+    font-weight: 550;
+    height: 800px;
+    padding-top: 40px;
+}
+.subcontent1{
+    letter-spacing: 4px;
+}
+
+.row1{
+    display: flex;
+}
+
+.subbox1{
+    background-color: #E1DCD0;
+    color: #00246B;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 22px;
+    font-weight: 900;
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    border: 3px solid transparent; /* Initially invisible border */
+    transition: border-color 0.3s;
+    border-radius: 10px;
+}
+
+.subbox1:hover {
+    border-color: black; /* Border appears on hover */
+}
+
+.b1{
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 15px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#graphimg{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 320px;
+    height: 250px;
+}
+
+.subbox2{
+    background-color: #E1DCD0;
+    color: #00246B;
+    width: 270px;
+    height: 280px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 15px;
+    border: 3px solid transparent; /* Initially invisible border */
+    transition: border-color 0.3s;
+    border-radius: 10px;
+}
+
+.subbox2:hover {
+    border-color: black; /* Border appears on hover */
+}
+
+.b2{
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 10px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.row2{
+    display: flex;
+    padding-left: 285px;
+    padding-top: 30px;
+}
+
+.subbox3{
+    background-color: #E1DCD0;
+    color: #00246B;
+    width: 300px;
+    height: 260px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 15px;
+    border: 3px solid transparent; /* Initially invisible border */
+    transition: border-color 0.3s;
+    border-radius: 10px;
+}
+
+.subbox3:hover {
+    border-color: black; /* Border appears on hover */
+}
+
+.b3{
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 15px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.saving{
+    padding-top: 2px;
+    padding-left: 10px;
+}
+#savingimg{
+    width: 300px;
+    height: 250px;
+}
+
+.subbox4{
+    background-color: #E1DCD0;
+    color: #00246B;
+    width: 280px;
+    height: 260px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 15px;
+    border: 3px solid transparent; /* Initially invisible border */
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.subbox4:hover {
+    border-color: black; /* Border appears on hover */
+}
+
+.b4{
+    color: black;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-right: 15px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.box2{
+    color: #00246B;
+    padding: 40px 150px;
+    font-size: 35px;
+    font-weight: 800;
+    height: 530px;
+}
+.content3{
+    letter-spacing: 3px;
+}
+.table1{
+    padding-top: 30px;
+    padding-right: 200px;
+}
+table{
+    background-color: #00246B;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 40px;
+    height: 350px;
+}
+table,td,tr{
+    border: 1px solid #E1DCD0;
+    border-collapse: collapse;
+    padding: 0.5rem 1rem;
+}
+
+.freqques{
+    padding: 35px 150px;
+    background-color: black;
+}
+
+.freqques h1{
+    color: white;
+    padding-bottom: 50px;
+}
+
+.faq-container {
+    max-width: 1200px;
+}
+  
+.faq-item {
+    border: 1px solid #ccc;
+    margin-bottom: 33px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.question {
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #E1DCD0;
+    font-weight: bold;
+    color: #00246B;
+}
+  
+.arrow {
+    color: black;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+  
+.answer {
+    font-size: 20px;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    background-color: #E1DCD0;
+}
+  
+.answer.open {
+    max-height: 150px; 
+    padding: 15px;
+}
+  
+.question.active .arrow {
+    transform: rotate(90deg);
+}
+
+.viewmore button{
+    background-color: #00246B;
+    cursor: pointer;
+    color: #E1DCD0;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.viewmore button:hover{
+    color: white;
+}
+
+footer{
+    height: 34%;
+    width: 100%;
+    background-color: #00246B;
+    display: flex;
+
+}
+
+.webpagename{
+    margin: 5px;
+    width: 30%;
+    height: 238px;
+    padding: 18px 150px;
+    border-right: 2px solid #808080;
+    padding-right: 18px;
+}
+
+.logoname{
+    display: flex;
+}
+
+#logoimg{
+    width: 60px;
+    height: 55px;
+}
+
+#websitename{
+    font-size: 35px;
+    color: white;
+    padding-top: 7px;
+    font-weight: 400;
+}
+
+.shead{
+    padding-top: 10px;
+    padding-left: 30px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.webtext{
+    color: white;
+    padding-top: 22px;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.navcontact{
+    margin: 5px;
+    width: 40%;
+    height: 238px;
+    padding: 30px 33px;
+    border-right: 2px solid #808080;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+}
+
+.navigationlink{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.navigationpart1{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.navigationpart2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 7px;
+}
+
+.follow{
+    padding: 6px 150px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.followpart1{
+    width: auto;
+    height: 47%;
+    margin: 0px 20px;
+    border-bottom: 2px solid #808080;
+}
+
+.followus
+{
+    font-size: 22px;
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 13px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+}
+
+.icons i{
+    font-size: 25px;
+    color: white;
+
+}
+
+.followpart2{
+    width: auto;
+    height: 53%;
+    margin: 0px 20px;
+    padding: 8px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#disclaim{
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+#text1{
+    font-size: 13px
+}

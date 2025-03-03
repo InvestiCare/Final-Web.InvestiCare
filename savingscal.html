@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="savingscalstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home.html">
+        <div class="webname">
+            <img  id="logo" src="InvestiCare logo.png" alt="InvestiCare logo"> 
+            <p>InvestiCare</p>
+        </div>
+    </a>
+        <div class="navlinks">
+            <a href="InvestmentGuide.html"><p>Investment Guide</p></a>
+            <a href="Investmentcalc.html"><p>Investment Calculator</p></a>
+            <a href="AssetClass.html"><p>Asset Class Overview</p></a>
+            <a href="savingscal.html"><p>Saving Planner</p></a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+        
+            <div class="calculator">
+                <h1>Savings Calculator</h1>
+                
+                <label>Monthly Income (₹):</label>
+                <input type="number" id="monthly-income" placeholder="Enter income">
+    
+                <label>Calculation Period (Years):</label>
+                <input type="number" id="calculation-period" placeholder="Enter years">
+    
+                <button id="calculate-btn">Calculate</button>
+                
+                <div class="results">
+                    <p id="total-income">Total Income: ₹0</p>
+                    <p id="needs">Needs (50%): ₹0</p>
+                    <p id="wants">Wants (30%): ₹0</p>
+                    <p id="savings">Savings & Investments (20%): ₹0</p>
+                </div>
+            </div>
+    
+            <div class="instructions-container">
+                <h2>How to Use the Savings Calculator?</h2>
+                
+                <ul>
+                    <li><b>Enter Monthly Income:</b> Your monthly salary or earnings.</li>
+                    <li><b>Enter Calculation Period:</b> The number of years you want to calculate savings for.</li>
+                    <li><b>Click 'Calculate':</b> Computes income distribution based on the 50-30-20 rule.</li>
+                    <li><b>View Pie Chart:</b> Shows how income is split into needs, wants, and savings.</li>
+                </ul>
+                
+                <div class="chart-container">
+                    <canvas id="savingsChart"></canvas>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="webpagename">
+            <a href="home.html">
+            <div class="logoname">
+                <img  id="logoimg" src="InvestiCare logo.png" alt="InvestiCare logo"> 
+                <p id="websitename">InvestiCare</p>
+            </div>
+        </a>
+            <div class="descript">
+                <p class="shead">Empowering Smart Investments</p>
+                <p class="webtext">Helping people make informed investment decisions with <br>easy-to-understand resources and tools. </p>
+            </div>
+        </div>
+        <div class="navcontact">
+            <div class="navigationlink">
+                <div class="navigationpart1">
+                    <a href="home.html"><p>Home</p></a>
+                    <a href="InvestmentGuide.html"><p>Investment Guide</p></a>
+                    <a href="Investmentcalc.html"><p>Investment Calculator</p></a>
+                    <a href="AssetClass.html"><p>Asset Class Overview</p></a>
+                </div>
+                <div class="navigationpart2">
+                    <a href="savingscal.html"><p>Savings Planner</p></a>
+                    <a href="faqs.html"><p>FAQs</p></a>
+                    <a href="about.html"><p>About Us</p></a>
+                </div>
+            </div>
+            <a href="contact.html" target="_blank"><p class="contact">Contact Us</p></a>
+        </div>
+        <div class="follow">
+            <div class="followpart1">
+                <div class="followus">
+                    <p>Follow Us On</p>
+                </div>
+                <div class="icons">
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-linkedin-line"></i>
+                </div>
+            </div>
+            <div class="followpart2">
+                <p id="disclaim">⚠️ Disclaimer:</p>
+                <p id="text1">Investments are subject to market risks. Please research thoroughly and contact a professional before making any financial decisions.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="savingscalscript.js"></script>
+
+</body>
+</html>
