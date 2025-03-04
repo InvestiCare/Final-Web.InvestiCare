@@ -210,10 +210,11 @@ a:hover {
 }
 
 footer{
-    height: 35%;
+    height: 34%;
     width: 100%;
     background-color: #00246B;
     display: flex;
+
 }
 
 .webpagename{
