@@ -116,6 +116,7 @@ table,td,tr{
     border-collapse: collapse;
     padding: 0.5rem 1rem;
 }
+
 footer{
     height: 34%;
     width: 100%;
@@ -212,7 +213,7 @@ footer{
 
 .followpart1{
     width: auto;
-    height: 47%;
+    height: 43%;
     margin: 0px 20px;
     border-bottom: 2px solid #808080;
 }
@@ -241,7 +242,7 @@ footer{
     width: auto;
     height: 53%;
     margin: 0px 20px;
-    padding: 8px 0;
+    padding: 12px 0;
     color: white;
     display: flex;
     flex-direction: column;
