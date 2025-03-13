@@ -10,6 +10,12 @@ InvestiCare is a beginner-friendly fintech platform designed to help teenagers a
 <h2>🌍 Website Link</h2>
 InvestiCare (https://investicare.github.io/Final-Web.InvestiCare/)
 <br><br>
+
+<h2> 👥Team Members </h2>
+1. Yug Shah - Team Lead / UI-UX Designer/ Developer<br>
+2. Kunj Sheth - Lead Developer<br>
+3. Kalp Patel - Content Researcher / Associate Developer<br>
+4. Dhruv Sutariya - Lead Developer<br><br>
 <h2>📧 Contact</h2>
 For any questions, feel free to reach out:<br>
 Email: investicare.hackathon@gmail.com
